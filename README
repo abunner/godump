@@ -1,0 +1,12 @@
+Based off http://code.google.com/p/golang/
+
+Serializes a Go variable to a nice debug string.
+
+Usage:
+
+import ("dump", "fmt")
+
+func main(args[] string) {
+  a := NewComplicatedValue()
+  fmt.Print("a is:\n", dump.Dump(a))
+}
